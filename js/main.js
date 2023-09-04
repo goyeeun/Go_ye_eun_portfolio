@@ -40,75 +40,45 @@ function fixHeader(){
     }
 }
 
-// responsive-Gallery-slide
-$(function(){
-    var slider = $('.Gallery .inner .slide');     
-    var timer;    
-    
-     $(window).on('load resize',function(){         
-        clearTimeout( timer );          
-        timer = setTimeout( sliderResponsive(), 100 ); 
-    }) 
-    function sliderResponsive(){         
-        if($(window).width() < 480){             
-            slider.filter('.slick-initialized').slick('unslick');         
-        }else{             
-            slider.not('.slick-initialized').slick({                
-                arrows: true,                
-                slidesToShow: 1,                 
-                slidesToScroll: 1            
-            });                         
-        }       
-    }     
-    function sliderResponsive(){         
-        if($(window).width() < 769){             
-            slider.filter('.slick-initialized').slick('unslick');         
-        }else{             
-            slider.not('.slick-initialized').slick({                
-                arrows: true,                
-                slidesToShow: 2,                 
-                slidesToScroll: 1            
-            });                         
-        }       
-    }  
-});
 
-//Gallery-slide
+// Gallery-slide
 $(function(){
-    $('.Gallery .inner .slide').slick({
+    $('.Gallery .inner .slide ').slick({
         arrows: false, //화살표
         dots: false, //인디케이터 해제
-        autoplay: false,
         fade: false, //페이드인 효과
+        autoplay: true, //자동재생
+        autoplaySpeed: 2000, //재생시간
         pauseOnHover: true, //마우스 오버, 포커스시 멈추는것 해제
         pauseOnFocus: false,
         slidesToShow: 3,
-        slidesToScroll: 3,
         infinite: true,
         scroll: true,
         draggable:true,
-        responsive: [ // 반응형 웹 구현 옵션
-    {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow:3,
+        responsive: [ 
+        {  
+          breakpoint: 1024, 
+          settings: {
+            slidesToShow: 3
+          } 
+        },
+        {  
+          breakpoint: 769, 
+          settings: {
+            slidesToShow: 3
+          } 
+        },
+        {  
+          breakpoint: 481, 
+          settings: {
+            slidesToShow: 1
+          } 
         }
-    }
-    ]
-    [ // 반응형 웹 구현 옵션
-    {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow:3,
-        }
-    }
-    ]
-       
+      ]
     });
 });
 
-
-//visual.slide
+// //visual.slide
 //2.슬라이드
 $(function() {
     $(".visual .slide").slick({ 
