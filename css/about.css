@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;600;700&display=swap');
 
 /* reset */
 *{margin: 0; padding: 0;}
@@ -11,6 +12,7 @@ a:hover {text-decoration: none; color: inherit;}
 button {border: none;background: none;cursor: pointer;}
 
 /*layout*/
+body {font-family: 'Noto Sans KR', sans-serif;}
 .wrap {width: 100%;height: 100%;}
 .en {font-family: 'Libre Baskerville', serif;}
 .txt{font-family: 'NanumSquare', sans-serif !important; }
@@ -410,7 +412,7 @@ br.mo {display: none;}
 /* 반응형 */
 /* 1280px */
 @media screen and (max-width:1280px){
-    .wrap {min-width: 100%;}
+    .wrap {max-width: 100%;}
 
         /* header */
         .innerHeader .logo {position: absolute;left: 20px;top: 0;}  
@@ -435,7 +437,7 @@ br.mo {display: none;}
  
          /* about */
          section.about .inner {width:calc(100% - 90px);}
-         section.about .inner .leftBox .intImg {padding-left: 0;width: 80%;}
+         section.about .inner .leftBox .intImg {margin-left: 0;width: 80%;}
          section.about .inner .leftBox .intImg img {width: 75%;}
          section.about .inner .leftBox:before {width: 350px;height: 350px;border-radius: 50%;position: absolute;left: 0px;top: 120px;}
          section.about .inner .leftBox .img {width: 13%; left: -15%;}
@@ -496,7 +498,7 @@ br.mo {display: none;}
 
          /* process */
         section.process .inner { width:calc(100% - 90px); }
-        section.process .inner .contents .list {width: 72%;}
+        section.process .inner .contents .list {width: 70%;}
         section.process .inner .contents .img { width: 73%; left: 17%;}
         section.process .inner .tit {padding-left: 50px;}
         section.process .inner .tit:before {left: 30px;}
@@ -512,12 +514,65 @@ br.mo {display: none;}
          .goTop img {width: 45px;height: 21px;}
 }
 
+/* 1024px~1279px */
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .wrap {min-width: 100% !important;overflow-y: hidden;}
+    .inner {width: 85% !important;}
+
+
+    /* visual */
+    section.visual .inner .ENimg {top: 10%;}
+    section.visual .inner .bgImg img {width: 65%;}
+
+    /* about */
+    section.about .inner .leftBox:before { width: 280px; height: 280px; left: 32px; top: 111px;}
+    section.about .inner .rightBox .img {right: -21%;}
+    section.about .inner .leftBox .shapeCircle #circle1 {width: 190px;height: 190px; bottom: 15%;}
+    section.about .inner .leftBox .shapeCircle #circle2 {bottom: 35%;}
+
+    /* bottom */
+    section.bottom .inner .rightBox .skill ul li {flex-basis: 145px;}
+    section.bottom .inner .txt ul li:nth-child(1) {left: 15%; top: 18%;}
+    section.bottom .inner .txt ul li:nth-child(2) {top: 32%; left: 26%;}
+    section.bottom .inner .txt ul li:nth-child(3) {top: 55%; left: 26%;}
+    section.bottom .inner .txt ul li:nth-child(4) {bottom: 32%; left: 13%;}
+    section.bottom .inner .txt ul li:nth-child(5) {bottom: 17%;}
+    section.bottom .circleBox2 { left: 31%;}
+    section.bottom .circleBox3,
+    section.bottom .circleBox5 {right: 7%;}
+    section.bottom .circleBox4,
+    section.bottom .circleBox1 {left: -12px;}
+
+    section.bottom .inner .rightBox .skill ul li:nth-child(1) .count2 {left: 6%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(1) b {left: 12%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(2) .count2 {left: 40%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(2) b {left: 46%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(3) .count2 {right: 19%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(3) b {right: 15%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(4) .count2 {left: 6%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(4) b {left: 12%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(5) .count2 {right: 19%;}
+    section.bottom .inner .rightBox .skill ul li:nth-child(5) b {right: 15%;}
+
+    /* secondvs */
+    section.secondvs .shapeCircle #circle4 {right: 7%; width: 200px; height: 200px;}
+
+    /* process */
+    section.process .inner .contents .list {width: 95%; margin: 209px 0;}
+    section.process .inner .contents .img {width: 100%; left: 0;}
+    /* goTop */
+    .goTop {right: 85px;}
+}
+
+
 /* 768px-Tablet */
-@media screen and (max-width: 768px){
-    .wrap{min-width: 100%;}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .wrap{min-width: 100%; overflow-y: hidden;}
+    .inner {width: 85% !important;}
 
      /* header */
      .innerHeader .tnb {display: none;}
+     .innerHeader .menu_btn {right: 60px;}
      .menuOpen .menuWrap .close {position: absolute;top:32px;right: 30px;}
      .menuOpen .menuWrap .menu {width: 25%;height: 100vh;float: left;position: relative;z-index: -9999;}
      .menuOpen .menuWrap .menu a span {font-size: 40px;}
@@ -577,9 +632,9 @@ br.mo {display: none;}
      section.bottom .inner .leftBox .lifeImg img {width: 100%;}
      section.bottom .inner .txt ul li {font-size: 13px;}
      section.bottom .inner .txt ul li:nth-child(1) {top: 16%;left: 12%;}
-     section.bottom .inner .txt ul li:nth-child(2) {position: absolute; top: 32%;left: 28%}
-     section.bottom .inner .txt ul li:nth-child(3) {position: absolute; top: 56%;left: 28%;}
-     section.bottom .inner .txt ul li:nth-child(4) {position: absolute; bottom:30%;left: 8%;}
+     section.bottom .inner .txt ul li:nth-child(2) {position: absolute; top: 32%;left: 29%}
+     section.bottom .inner .txt ul li:nth-child(3) {position: absolute; top: 56%;left: 29%;}
+     section.bottom .inner .txt ul li:nth-child(4) {position: absolute; bottom:31%;left: 9%;}
      section.bottom .inner .txt ul li:nth-child(5) {position: absolute; bottom: 17%;left:5%;line-height: 1.4;}
      section.bottom .inner .rightBox {position: absolute;top: 0%;right: 0;}
      section.bottom .inner .rightBox .tit {margin-bottom: 90px;}
@@ -681,6 +736,113 @@ br.mo {display: none;}
       /* goTop */
       .goTop {width: 45px;height: 21px; right: 13px;}
 }
+
+/* 481px~767px */
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .wrap {min-width: 100%; overflow-y: hidden;}
+    .inner {width: 85%;}
+
+    /* header */
+    .innerHeader .tnb {display: none;}
+
+    /* visual */
+    section.visual .inner .bgImg {display: none;}
+    section.visual .inner .ENimg {top: 11%; left: 31%;}
+    section.visual .inner .shapeBox #Box1 {width: 280px; height: 280px; top: -100px; left: -130px;}
+    section.visual .inner .txt {right: -130px; top: 13%;}
+    section.visual .inner .txt p {font-size: 25px;}
+
+    /* about */
+    section.about .inner .leftBox .intImg img {width: 100%;}
+    section.about .inner .leftBox:before {width: 150px; height: 150px; left: -7%;}
+    section.about .inner .rightBox .img {width: 100%;}
+    section.about .inner .leftBox .shapeCircle #circle1 {position: absolute; left: 11%;bottom: 15%;width: 100px;height: 100px;background:#ffda75;border-radius: 50%;z-index: 100;animation-name: big;animation-duration: 2s;animation-delay: 1s;animation-iteration-count: infinite;animation-direction: alternate;animation-fill-mode: none; animation-play-state: running;}
+        @keyframes big{
+            from{
+                width: 90px;
+                height: 90px;
+            }
+            to{
+                width: 140px;
+                height: 140px;
+            }
+        }
+        section.about .inner .leftBox .shapeCircle #circle2 {position: absolute; left: 30%; bottom:31%;width: 60px;height: 60px;background:#fb9958;border-radius: 50%;animation-name: big2;animation-duration: 2s;animation-delay: 0.5s;animation-iteration-count: infinite;animation-direction: alternate;animation-fill-mode: none; animation-play-state: running;}
+        @keyframes big2{
+            from{
+                width: 60px;
+                height: 60px;
+            }
+            to{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        /* bottom */
+     section.bottom .inner {height: 1000px;width: calc(100% - 20px);}
+     section.bottom .inner .leftBox {width: 80%;position: absolute;left: 24%;bottom: 35%;padding-bottom: 0px;}
+     section.bottom .inner .leftBox .tit {position: absolute;top: -55px;left: -100px;padding-left: 0;}
+     section.bottom .inner .leftBox .lifeImg {padding-left: 20px;width: 100%;}
+     section.bottom .inner .leftBox .lifeImg img {width:50%;}
+     section.bottom .inner .txt ul li {font-size: 12px;}
+     section.bottom .inner .txt ul li:nth-child(1) {top: 4%;left: 16%;}
+     section.bottom .inner .txt ul li:nth-child(2) {position: absolute; top: 30%;left: 47%;}
+     section.bottom .inner .txt ul li:nth-child(3) {position: absolute; top: 68%;left: 47%}
+     section.bottom .inner .txt ul li:nth-child(4) {position: absolute; bottom:10%;left: 9%;}
+     section.bottom .inner .txt ul li:nth-child(5) {position: absolute; bottom: -37px;left:0;line-height: 1.4;}
+     section.bottom .inner .rightBox {width: 100%;;position: absolute;top: 50%;right: 0%;}
+     section.bottom .inner .rightBox .tit {padding-left: 10px;padding-top: 70px;margin-bottom: 60px;}
+     section.bottom .inner .rightBox .skill ul li{flex-basis: 92px;padding-left: 0px;}
+     section.bottom .inner .rightBox .skill ul li:nth-child(4) {margin-left:0px;}
+     section.bottom .inner .rightBox .skill ul li:nth-child(5) {margin-right:0px;}
+     section.bottom .inner .rightBox .skill ul li .count2 {font-size: 15px;}
+     section.bottom .inner .rightBox .skill ul li b {font-size: 15px;}
+     section.bottom .inner .rightBox .skill ul li .data {padding-top: 17px;}
+     section.bottom .inner .rightBox .skill ul li .data img {width: 60%;;margin: 40px 20px;}
+
+        /* count */
+      section.bottom .inner .rightBox .skill ul li:nth-child(1) .count2 {position: absolute;top: 0%;left: 7%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(1) b {position: absolute; top: 0%;left: 11%;}
+ 
+      section.bottom .inner .rightBox .skill ul li:nth-child(2) .count2 {position: absolute;top: 0%;left:28%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(2) b {position: absolute; top: 0%;left: 32%;}
+ 
+      section.bottom .inner .rightBox .skill ul li:nth-child(3) .count2 {position: absolute;top: 0%;left:47%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(3) b {position: absolute; top: 0%;left: 51%;}
+ 
+      section.bottom .inner .rightBox .skill ul li:nth-child(4) .count2 {position: absolute;top: 0%;left:67%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(4) b {position: absolute; top: 0;left: 71%;}
+ 
+      section.bottom .inner .rightBox .skill ul li:nth-child(5) .count2 {position: absolute;top: 0;left:86%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(5) b {position: absolute; top: 0;left: 90%;}
+ 
+      /* circleBox */
+      section.bottom .circleBox1 {top:40%;left: 2%;width: 16%;}
+      section.bottom .circleBox2 {top:40%; left: 23%;width: 16%;}
+      section.bottom .circleBox3 {top:40%; left: 42%;width: 16%;}
+      section.bottom .circleBox4 {top: 40%; left:62%;width: 16%;}
+      section.bottom .circleBox5 {top: 40%; left:81%;width: 16%;}
+
+      /* secondvs */
+      section.secondvs .inner {padding-left: 0;}
+      section.secondvs .inner .tit {font-size: 50px;}
+      section.secondvs .inner .tit:before {width: 160px;height: 160px;}
+      section.secondvs .shapeCircle #circle3 {left: 52px; width: 80px; height: 80px;}
+      section.secondvs .shapeCircle #circle4 { right: 0; bottom: 70px; width: 180px; height: 180px;}
+
+      /* process */
+      section.process .inner .contents .img {width: 100%; left: 0;} 
+      section.process .inner .contents .list {width: 100%;left:40%;margin: 88px 42px;padding-top: 90px;}
+     section.process .inner .contents .list li {flex-basis: 90px;font-size: 15px;text-align: center;}
+     section.process .inner .contents .list li a p {font-size: 10px;}
+     section.process .inner .contents .list li a b {font-size: 17px;}
+
+     section.process .inner .contents .list li:nth-child(1) {padding-bottom: 0;}
+     section.process .inner .contents .list li:nth-child(9) {padding-top: 30px;}
+     section.process .inner .contents .list li:nth-child(10) {padding-top: 30px;}
+     section.process .inner .contents .list li:nth-child(11) {padding-top: 30px;}
+
+    }
 
 /* 480PX_MO1 */
 @media screen and (max-width:480px){
