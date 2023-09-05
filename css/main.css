@@ -770,4 +770,118 @@ br.mo {display: none;}
             .goTop {right: 10px;bottom: 15%;z-index: 1;width: 45px;height: 21px;}
         }
 
+        /* 390px */
+        @media screen and (min-width:390px) and (max-width: 479px) {
+          .wrap {min-width: 100% !important;}
+          .inner {width: 85% !important;}
+          
+          section.visual .shapeBox {
+            left: 7% !important;
+          }
+          section.visual .txtBox {
+            top: 10%;
+            left: 5% !important;
+          }
+          section.visual .shapeBox #Box1 {
+            height: 210px !important;
+          }
+          section.visual .shapeBox #Box2 {
+            height: 200px !important;
+          }
+    
+          /* about */
+          section.about .lineBox {
+            width: 250px;
+            top: 25%;
+          }
+          section.about .inner .moreBtn {
+            top: 20px;
+          }
+          section.about .inner .rightBox .career .Tit_2:before {
+            top: 19%;
+          }
+          section.about .inner .rightBox .skill {
+            width: 80% !important;
+          }
+          section.about .inner .rightBox .skill:before {
+            width: 35px;
+            height: 35px;
+          }
+          section.about .inner .rightBox .skill ul li {
+            margin-top: 22px;
+          }
+
+          /* scvisual */
+          .scvisual {
+            height: 800px;
+            padding-top: 150px;
+          }
+          #scvisual img {
+            top: 37%;
+          }
+          #sctitle {
+            left: 11%;
+            top: 40%;
+            font-size: 23px;
+          }
+          #cloud_a {
+            margin-top: 110px;
+          }
+          #cloud_b {
+            left: 5%;
+            top: 35%;
+          }
+          #wave_c {
+            top: 10%;
+          }
+          #circle_a{
+            top: 36%;
+          }
+          #circle_a img {
+            width: 30%;
+          }
+          #circle_b {
+            top: 0%
+          }
+          #circle_b img {
+            width: 8%;
+          }
+          #circle_c {
+            bottom: 50%;
+          }
+          #circle_d {
+            top: -5%;
+          }
+          #leaf_a {
+            bottom: 5%;
+          }
+          #leaf_b {
+            top: 66%;
+          }
+          #leaf_c {
+            right: -60%;
+            top: 15%;
+          }
+          #leaf_c img {
+            width: 40%;
+          }
+
+          /* gallery */
+          section.Gallery .inner .moreBtn {
+            top: 5%;
+          }
+
+          /* contact */
+          section.contact .inner .mainTit {
+            left: 20px;
+          }
+          section.contact .inner .txt{
+            right: 25%;
+          }
+          
+          /* goTop */
+          .goTop {
+            bottom: 18%;
+          }
+        }
         
