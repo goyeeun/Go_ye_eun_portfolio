@@ -388,14 +388,14 @@ section.process .inner .contents .list li a {display: block;}
 section.process .inner .contents .list li a b {font-size: 18px;}
 section.process .inner .contents .list li a p {font-size: 12px;padding-top: 4px;}
 /*secton.video*/
-section.video {width: 100%;margin: auto;margin-top: 250px;overflow: hidden;}
+section.video {width: 100%;margin: auto;padding-top: 250px;padding-bottom: 250px;}
 section.video .inner {width: 800px;margin: auto;padding-top: 50%;margin-top: 100px;position: relative;}
 section.video .inner:after {content: ''; width: 800px;height: 500px;position: absolute; left:50px;top: -50px;background: #f2f2f3;z-index: -9999;transform: rotate(5deg)}
 section.video .inner video {position: absolute;top:0;left: 0;width: 100%;height: 50%;}
 
 /*section.trisc*/
 .trisc {width: 100%;height: 100%; position: relative;}
-.trisc img {width: 30%;margin-top: 20px;position: absolute; bottom: 60%; left: 0;}
+.trisc img {width: 30%;position: absolute; bottom: 60%; left: 0;}
 .trisc img img {width: 100%;}
 /*section.goTop*/
 .goTop {position: fixed;right: 60px;bottom: 15%;z-index: 1;}
@@ -508,6 +508,10 @@ br.mo {display: none;}
          section.video .inner {width:calc(100% - 90px);}
          section.video .inner video {height: 100%;}
          section.video .inner:after {display: none;}
+
+         .trisc img {
+            width: 13%;
+         }
 
          /* goTop */
          .goTop {right: 30px;}
@@ -846,7 +850,8 @@ br.mo {display: none;}
 
 /* 480PX_MO1 */
 @media screen and (max-width:480px){
-    .wrap{min-width: 100%;}
+    .wrap{min-width: 100% !important; overflow-y: hidden;}
+    .inner {width: 85% !important;}
    
     /* header */
     .innerHeader .tnb {display: none;}
@@ -876,7 +881,7 @@ br.mo {display: none;}
     section.visual .inner .ENimg {top:17%;left: 50%;}
     section.visual .inner .ENimg img {width:100%;}
     section.visual .inner .bgImg {display: none;}
-    section.visual .inner .shapeBox {left: 15%;}
+    section.visual .inner .shapeBox {top: 20%; left: 62%;}
     Section.visual .inner .shapeBox #Box1 {width: 240px; height: 240px;}
 
     /* about */
@@ -941,18 +946,18 @@ br.mo {display: none;}
       section.bottom .inner .rightBox .skill ul li:nth-child(3) .count2 {position: absolute;top: 0%;left:47%;} 
       section.bottom .inner .rightBox .skill ul li:nth-child(3) b {position: absolute; top: 0%;left: 51%;}
  
-      section.bottom .inner .rightBox .skill ul li:nth-child(4) .count2 {position: absolute;top: 0%;right:12%;} 
+      section.bottom .inner .rightBox .skill ul li:nth-child(4) .count2 {position: absolute;top: 0%;left:67%;} 
       section.bottom .inner .rightBox .skill ul li:nth-child(4) b {position: absolute; top: 0;left: 71%;}
  
       section.bottom .inner .rightBox .skill ul li:nth-child(5) .count2 {position: absolute;top: 0;left:86%;} 
       section.bottom .inner .rightBox .skill ul li:nth-child(5) b {position: absolute; top: 0;left: 90%;}
  
       /* circleBox */
-      section.bottom .circleBox1 {top:42%;left: 2%;width: 16%;}
-      section.bottom .circleBox2 {top:42%; left: 23%;width: 16%;}
-      section.bottom .circleBox3 {top:42%; left: 42%;width: 16%;}
-      section.bottom .circleBox4 {top: 42%; left:62%;width: 16%;}
-      section.bottom .circleBox5 {top: 42%; left:81%;width: 16%;}
+      section.bottom .circleBox1 {top:40%;left: 2%;width: 16%;}
+      section.bottom .circleBox2 {top:40%; left: 23%;width: 16%;}
+      section.bottom .circleBox3 {top:40%; left: 42%;width: 16%;}
+      section.bottom .circleBox4 {top: 40%; left:62%;width: 16%;}
+      section.bottom .circleBox5 {top: 40%; left:81%;width: 16%;}
 
       /* scvisual */
       section.secondvs .inner {padding-left: 100px;}
@@ -969,64 +974,64 @@ br.mo {display: none;}
      section.process .inner .txt {padding-left: 23px;font-size: 13px;}
      section.process .inner .contents .img {width: 100%;top: 0px;left: 0;}
      section.process .inner .contents {width: 100%;}
-     section.process .inner .contents .list {width: 100%;left:40%;margin: 88px 42px;padding-top: 120px;}
-     section.process .inner .contents .list li {flex-basis: 97px;font-size: 15px;text-align: center;}
+     section.process .inner .contents .list {width: 100%;left:40%;margin: 77px 42px;padding-top: 120px;}
+     section.process .inner .contents .list li {flex-basis: 82px;font-size: 15px;text-align: center;}
      section.process .inner .contents .list li a p {font-size: 10px;}
      section.process .inner .contents .list li a b {font-size: 17px;}
      
 
     /*nth-child(1)*/
     section.process .inner .contents .list li:nth-child(1) {font-weight: bold;padding-bottom: 0px;}
-    section.process .inner .contents .list li:nth-child(1):before {width: 80px;height: 80px;left:10%;top: 31%;}
-    section.process .inner .contents .list li:nth-child(1):hover:before{width: 80px;height: 80px;left:10%;top: 31%;} 
+    section.process .inner .contents .list li:nth-child(1):before {width: 75px;height: 75px;left:10%;top: 32%;}
+    section.process .inner .contents .list li:nth-child(1):hover:before{display: none;} 
 
     /*nth-child(2)*/
     section.process .inner .contents .list li:nth-child(2) { font-weight: bold;}
-    section.process .inner .contents .list li:nth-child(2):before {width: 80px;height: 80px; left:31%;top:31%;}
-    section.process .inner .contents .list li:nth-child(2):hover:before{width: 80px;height: 80px; left:31%;top:31%;} 
+    section.process .inner .contents .list li:nth-child(2):before {width: 75px;height: 75px; left:31%;top:32%;}
+    section.process .inner .contents .list li:nth-child(2):hover:before{display: none;} 
 
     /*nth-child(3)*/
     section.process .inner .contents .list li:nth-child(3){font-weight: bold;}
-    section.process .inner .contents .list li:nth-child(3):before {width: 80px;height: 80px;left: 52%;top: 31%;}
-    section.process .inner .contents .list li:nth-child(3):hover:before{width: 80px;height: 80px;left: 52%;top: 31%;} 
+    section.process .inner .contents .list li:nth-child(3):before {width: 75px;height: 75px;left: 51%;top: 32%;}
+    section.process .inner .contents .list li:nth-child(3):hover:before{display: none;} 
 
     /*nth-child(4)*/
     section.process .inner .contents .list li:nth-child(4){font-weight: bold;}
-    section.process .inner .contents .list li:nth-child(4):before {width: 80px;height: 80px; right: 9%;top: 31%;}
-    section.process .inner .contents .list li:nth-child(4):hover:before{width: 80px;height: 80px; right: 9%;top: 31%;} 
+    section.process .inner .contents .list li:nth-child(4):before {width: 75px;height: 75px; right: 10%;top: 32%;}
+    section.process .inner .contents .list li:nth-child(4):hover:before{display: none;} 
 
     /*nth-child(5)*/
-    section.process .inner .contents .list li:nth-child(5){font-weight: bold;padding-top: 50px;}
-    section.process .inner .contents .list li:nth-child(5):before {width: 80px;height: 80px; left:10%; top: 57%;}
-    section.process .inner .contents .list li:nth-child(5):hover:before{width: 80px;height: 80px; left:10%; top: 57%;} 
+    section.process .inner .contents .list li:nth-child(5){font-weight: bold;}
+    section.process .inner .contents .list li:nth-child(5):before {width: 75px;height: 75px; left:10%; top: 57%;}
+    section.process .inner .contents .list li:nth-child(5):hover:before{display: none;} 
 
     /*nth-child(6)*/
-    section.process .inner .contents .list li:nth-child(6){font-weight: bold;padding-top: 50px;}
-    section.process .inner .contents .list li:nth-child(6):before {width: 80px;height: 80px;left:31%;top: 57%;}
-    section.process .inner .contents .list li:nth-child(6):hover:before{width: 80px;height: 80px;left:31%;top: 57%;} 
+    section.process .inner .contents .list li:nth-child(6){font-weight: bold;}
+    section.process .inner .contents .list li:nth-child(6):before {width: 75px;height: 75px;left:31%;top: 57%;}
+    section.process .inner .contents .list li:nth-child(6):hover:before{display: none;} 
 
     /*nth-child(7)*/
-    section.process .inner .contents .list li:nth-child(7){font-weight: bold;padding-top: 50px;}
-    section.process .inner .contents .list li:nth-child(7):before {width: 80px;height: 80px;left: 52%;top: 57%;}
-    section.process .inner .contents .list li:nth-child(7):hover:before{width: 80px;height: 80px;left: 52%;top: 57%;} 
+    section.process .inner .contents .list li:nth-child(7){font-weight: bold;}
+    section.process .inner .contents .list li:nth-child(7):before {width: 75px;height: 75px;left: 51%;top: 57%;}
+    section.process .inner .contents .list li:nth-child(7):hover:before{display: none;} 
 
     /*nth-child(8)*/
-    section.process .inner .contents .list li:nth-child(8) {font-weight: bold;padding-top: 50px;}
-    section.process .inner .contents .list li:nth-child(8):before {width: 80px;height: 80px; right: 9%;top: 57%;}
-    section.process .inner .contents .list li:nth-child(8):hover:before{width: 80px;height: 80px; right: 9%;top: 57%;} 
+    section.process .inner .contents .list li:nth-child(8) {font-weight: bold;}
+    section.process .inner .contents .list li:nth-child(8):before {width: 75px;height: 75px; right: 10%;top: 57%;}
+    section.process .inner .contents .list li:nth-child(8):hover:before{display: none;} 
 
     /*nth-child(9)*/
-    section.process .inner .contents .list li:nth-child(9) {font-weight: bold;padding-top: 33px;}
-    section.process .inner .contents .list li:nth-child(9):before {width: 80px;height: 80px; left: 20%; top: 82%;}
-    section.process .inner .contents .list li:nth-child(9):hover:before{width: 80px;height: 80px; left: 20%; top: 82%;} 
+    section.process .inner .contents .list li:nth-child(9) {font-weight: bold;padding-top: 25px;}
+    section.process .inner .contents .list li:nth-child(9):before {width: 75px;height: 75px; left: 20%; top: 82%;}
+    section.process .inner .contents .list li:nth-child(9):hover:before{display: none;} 
 
     /*nth-chid(10)*/
-    section.process .inner .contents .list li:nth-child(10) {font-weight: bold;padding-top: 33px;}
-    section.process .inner .contents .list li:nth-child(10):before {width: 80px;height: 80px; right: 20%; top: 82%;}
-    section.process .inner .contents .list li:nth-child(10):hover:before{width: 80px;height: 80px; right: 20%; top: 82%;}
+    section.process .inner .contents .list li:nth-child(10) {font-weight: bold;padding-top: 25px;}
+    section.process .inner .contents .list li:nth-child(10):before {width: 75px;height: 75px; left: 40.5%; top: 82%;}
+    section.process .inner .contents .list li:nth-child(10):hover:before{display: none;}
     /*nth-child(11)*/
-    section.process .inner .contents .list li:nth-child(11) {font-weight: bold;padding-top: 33px;}
-    section.process .inner .contents .list li:nth-child(11):before {width: 80px;height: 80px; right: 20%; top: 82%;}
+    section.process .inner .contents .list li:nth-child(11) {font-weight: bold;padding-top: 25px;}
+    section.process .inner .contents .list li:nth-child(11):before {width: 75px;height: 75px; right: 20.5%; top: 82%;}
     section.process .inner .contents .list li:nth-child(11):hover:before {width: 80px;height: 80px; right: 20%; top: 82%;}
 
     /* iframe */
