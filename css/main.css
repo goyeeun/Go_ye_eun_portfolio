@@ -797,8 +797,11 @@ br.mo {display: none;}
           section.about .inner .moreBtn {
             top: 20px;
           }
+          section.about .inner .rightBox .edu .Tit:before{
+            top: -6px;
+          }
           section.about .inner .rightBox .career .Tit_2:before {
-            top: 19%;
+            top: 18%;
           }
           section.about .inner .rightBox .skill {
             width: 80% !important;
