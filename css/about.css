@@ -394,8 +394,8 @@ section.video .inner:after {content: ''; width: 800px;height: 500px;position: ab
 section.video .inner video {position: absolute;top:0;left: 0;width: 100%;height: 50%;}
 
 /*section.trisc*/
-.trisc {width: 100%;overflow: hidden;}
-.trisc img {width: 10%;height: 10%;margin-top: 20px;}
+.trisc {width: 100%;height: 100%; position: relative;}
+.trisc img {width: 30%;margin-top: 20px;position: absolute; bottom: 60%; left: 0;}
 .trisc img img {width: 100%;}
 /*section.goTop*/
 .goTop {position: fixed;right: 60px;bottom: 15%;z-index: 1;}
@@ -1040,7 +1040,7 @@ br.mo {display: none;}
 }
 
  /* 390px-MO_2 */
- @media screen and (max-width:390px) {
+ @media screen and (min-width:390px) and (max-width: 479px) {
     .wrap {min-width: 100%;}
     br.mo {display: inline;}
     
@@ -1048,7 +1048,7 @@ br.mo {display: none;}
     section.visual .inner .txt {right: -45px; top: 8%;}
     section.visual .inner .txt p {font-size: 15px;}
     section.visual .inner .ENimg {top: 16%;left: 41%;}
-    section.visual .inner .shapeBox {left: 5%; top: 18%;}
+    section.visual .inner .shapeBox {left: 64%; top: 18%;}
     Section.visual .inner .shapeBox #Box1 {width: 210px;height: 210px;}
 
     /* about */
@@ -1086,11 +1086,11 @@ br.mo {display: none;}
       section.bottom .inner .rightBox .skill ul li:nth-child(5) b {position: absolute; top: 48%;left: 83%;}
  
       /* circleBox */
-      section.bottom .circleBox1 {top:28%;left: 3%;width: 20%;}
-      section.bottom .circleBox2 {top:28%; left: 38%;width: 20%;}
-      section.bottom .circleBox3 {top:28%; left: 71%;width: 20%;}
-      section.bottom .circleBox4 {top: 60%; left:3%;width: 20%;}
-      section.bottom .circleBox5 {top: 60%; left:71%;width: 20%;}
+      section.bottom .circleBox1 {top:26%;left: 3%;width: 20%;}
+      section.bottom .circleBox2 {top:26%; left: 38%;width: 20%;}
+      section.bottom .circleBox3 {top:26%; left: 72%;width: 20%;}
+      section.bottom .circleBox4 {top: 59%; left:3%;width: 20%;}
+      section.bottom .circleBox5 {top: 59%; left:71%;width: 20%;}
 
       /* scvisual */
       section.secondvs .inner {padding-left: 23px;}
@@ -1168,4 +1168,10 @@ br.mo {display: none;}
    
     /* goTop */
      .goTop {right: 10px;bottom: 15%;z-index: 1;width: 45px;height: 21px;}
+
+     .trisc img {
+        width: 30%;
+        height: auto;
+        margin-top: 13px;
+    }
  }
