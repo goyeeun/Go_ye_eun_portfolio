@@ -971,7 +971,9 @@ br.mo {display: none;}
 
      /* process */
      section.process .inner {width: calc(100% - 20px);}
-     section.process .inner .txt {padding-left: 23px;font-size: 13px;}
+     section.process .inner .tit { padding-left: 20px;}
+    section.process .inner .tit:before {left:0;}
+     section.process .inner .txt {padding-left: 0;font-size: 12px;}
      section.process .inner .contents .img {width: 100%;top: 0px;left: 0;}
      section.process .inner .contents {width: 100%;}
      section.process .inner .contents .list {width: 100%;left:40%;margin: 77px 42px;padding-top: 120px;}
@@ -1036,7 +1038,7 @@ br.mo {display: none;}
 
     /* iframe */
     section.video .inner {width: 600px;}
-    section.video .inner video {width: 70%; height: 100%;padding-left: 35px;}
+    section.video .inner video {width: 100%; height: 100%;padding-left: 0;}
     section.video .inner:after {width: 400px; height: 400px; left: 23px;}
 
 
