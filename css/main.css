@@ -700,8 +700,11 @@ br.mo {display: none;}
             .mainTit {padding-left: 0 !important;}
 
 
-            /*  */
+           /* header */
             .innerHeader .tnb {display: none;}
+            .innerHeader .logo img {width:65%;}
+            header.on .innerHeader .logo {transition: all 0.4s;padding: 9px 0px;box-sizing: border-box;}
+            header.on .innerHeader .logo a img {width: 50%;transition: all 0.4s}
             /* visual */
             section.visual .txtBox {top: 15%;left: 10%;text-align: center;}
             section.visual .txtBox .tit {font-size: 28px;}
