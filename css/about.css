@@ -850,8 +850,8 @@ br.mo {display: none;}
 
 /* 480PX_MO1 */
 @media screen and (max-width:480px){
-    .wrap{max-width: 100% !important; overflow-y: hidden;}
-    .inner {width: 85% !important;}
+    .wrap{max-width: 100% !important; }
+    .inner {width: 75% !important;}
    
     /* header */
     .innerHeader .tnb {display: none;}
@@ -971,7 +971,7 @@ br.mo {display: none;}
      section.details {width: 100%;}
 
      /* process */
-     section.process .inner {width: calc(100% - 20px);}
+     section.process .inner {width: 85% !important;}
      section.process .inner .tit { padding-left: 20px;}
      section.process .inner .tit:before {left:0;}
      section.process .inner .txt {padding-left: 0;font-size: 12px; margin-bottom: 50px;}
@@ -1052,7 +1052,7 @@ br.mo {display: none;}
  @media screen and (min-width:390px) and (max-width: 479px) {
     .wrap {min-width: 100%;}
     br.mo {display: inline;}
-    .inner {width: 100% !important;}
+   
     
     /* visual */
     section.visual .inner .txt {right: -45px; top: 8%;}
@@ -1109,6 +1109,7 @@ br.mo {display: none;}
       section.secondvs .inner .txt {font-size: 16px;}
 
       /* process */
+      section.process .inner {width: 100% !important;}
       section.process .inner .contents {width: 100%;}
       section.process .inner .tit {padding-left: 30px;}
       section.process .inner .tit:before{left: 15px;}
